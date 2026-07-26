@@ -23,7 +23,7 @@
 // Пока здесь пусто, логику добавим чуть позже
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 /* Стили будут работать только внутри этого компонента благодаря scoped */
 .site-header {
   position: fixed;
