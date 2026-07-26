@@ -11,13 +11,15 @@ import HeroSection from './components/HeroSection.vue';
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
+@import './styles/variables';
+
 /* Глобальные стили для всего сайта */
 body {
   margin: 0;
   padding: 0;
-  background-color: #0f172a;
-  color: #f8fafc;
+  background-color: $color-bg;
+  color: $color-text;
   font-family:
     system-ui,
     -apple-system,

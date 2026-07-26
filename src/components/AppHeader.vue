@@ -20,14 +20,15 @@
 </script>
 
 <style scoped lang="scss">
+@import '../styles/variables';
 /* Стили будут работать только внутри этого компонента благодаря scoped */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1e293b; /* Темно-серый фон */
-  border-bottom: 1px solid #38bdf8; /* Голубая неоновая полоса снизу */
+  background-color: $color-surface; /* Темно-серый фон */
+  border-bottom: 1px solid $color-primary; /* Голубая неоновая полоса снизу */
   z-index: 1000;
   .header-container {
     max-width: 1200px;
@@ -43,9 +44,9 @@
       font-size: 1.5rem;
       font-weight: 700;
       text-transform: uppercase;
-      color: #f8fafc;
+      color: $color-text;
       &-accent {
-        color: #38bdf8; /* Выделяем слово Стекло голубым */
+        color: $color-primary; /* Выделяем слово Стекло голубым */
       }
     }
     .header-contacts {
@@ -53,12 +54,12 @@
       align-items: center;
       gap: 1.5rem;
       .phone-link {
-        color: #f8fafc;
+        color: $color-text;
         text-decoration: none;
         font-weight: 500;
       }
       .callback-btn {
-        background-color: #38bdf8;
+        background-color: $color-primary;
         color: #0f172a;
         border: none;
         padding: 0.6rem 1.2rem;
@@ -71,7 +72,7 @@
           font-size: 0.85rem;
         }
         &:hover {
-          background-color: #0ea5e9; /* Темнеет при наведении */
+          background-color: $color-primary; /* Темнеет при наведении */
         }
       }
     }

@@ -18,6 +18,7 @@
 <script script></script>
 
 <style scoped lang="scss">
+@import '../styles/variables';
 .hero {
   min-height: 85vh;
   display: flex;
@@ -33,21 +34,21 @@
 
     h1 {
       font-size: 3rem;
-      color: #f8fafc;
+      color: $color-text;
       margin-bottom: 1.5rem;
       line-height: 1.2;
     }
 
     p {
       font-size: 1.25rem;
-      color: #94a3b8; // Приглушенный серый цвет
+      color: $color-text-muted; // Приглушенный серый цвет
       margin-bottom: 2.5rem;
     }
   }
 
   .hero-btn {
-    background-color: #38bdf8;
-    color: #0f172a;
+    background-color: $color-primary;
+    color: $color-bg;
     border: none;
     padding: 1rem 2.5rem;
     border-radius: 8px;
@@ -58,8 +59,10 @@
 
     // Знак амперсанда & в SCSS означает обращение к текущему родителю (то есть к .hero-btn)
     &:hover {
-      background-color: #0ea5e9;
-      transform: translateY(-2px); // Кнопка будет слегка приподниматься при наведении
+      background-color: $color-primary;
+      transform: translateY(
+        -2px
+      ); // Кнопка будет слегка приподниматься при наведении
       box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
     }
 
@@ -76,4 +79,3 @@
   }
 }
 </style>
-
