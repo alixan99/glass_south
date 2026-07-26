@@ -1,0 +1,8 @@
+@import './reset';
+@import './variables';
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
