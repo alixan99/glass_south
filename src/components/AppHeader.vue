@@ -1,0 +1,84 @@
+<template>
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Логотип -->
+      <div class="logo">
+        <span class="logo-accent">Стекло</span>Юг
+      </div>
+
+      <!-- Контакты -->
+      <div class="header-contacts">
+        <a href="tel:+79991234567" class="phone-link">
+          <span class="phone-number">+7 (999) 123-45-67</span>
+        </a>
+        <button class="callback-btn">
+          Рассчитать стоимость
+        </button>
+      </div>
+    </div>
+  </header>
+</template>
+
+<script setup>
+// Пока здесь пусто, логику добавим чуть позже
+</script>
+
+<style scoped>
+/* Стили будут работать только внутри этого компонента благодаря scoped */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e293b; /* Темно-серый фон */
+  border-bottom: 1px solid #38bdf8; /* Голубая неоновая полоса снизу */
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f8fafc;
+}
+
+.logo-accent {
+  color: #38bdf8; /* Выделяем слово Стекло голубым */
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.phone-link {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.callback-btn {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.callback-btn:hover {
+  background-color: #0ea5e9; /* Темнеет при наведении */
+}
+</style>
