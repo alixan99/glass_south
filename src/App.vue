@@ -1,15 +1,24 @@
 <script setup>
 // Шаг A: Импортируем наш новый компонент шапки
+import { ref } from 'vue';
 import AppHeader from './components/AppHeader.vue';
 import HeroSection from './components/HeroSection.vue';
 import QuizModal from './components/QuizModal.vue';
+
+const isQuizOpen = ref(false);
+const openQuiz = () => {
+  isQuizOpen.value = true;
+};
+const closeQuiz = () => {
+  isQuizOpen.value = false;
+};
 </script>
 
 <template>
-  <div class="app-wrapper">
+  <div class="app-container">
     <AppHeader />
-    <HeroSection />
-    <QuizModal />
+    <HeroSection @open-quiz="openQuiz" />
+    <QuizModal v-if="isQuizOpen" />
   </div>
 </template>
 

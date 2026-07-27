@@ -8,7 +8,7 @@
         Душевые системы, перила и перегородки по индивидуальным размерам с
         гарантией от производителя
       </p>
-      <button @click="console.log('Клик сработал!')" class="hero-btn">
+      <button @click="$emit('open-quiz')" class="hero-btn">
         Рассчитать стоимость
       </button>
     </div>
