@@ -60,7 +60,7 @@
       }
       .callback-btn {
         background-color: $color-primary;
-        color: #0f172a;
+        color: $color-bg;
         border: none;
         padding: 0.6rem 1.2rem;
         border-radius: 6px;
