@@ -2,12 +2,14 @@
 // Шаг A: Импортируем наш новый компонент шапки
 import AppHeader from './components/AppHeader.vue';
 import HeroSection from './components/HeroSection.vue';
+import QuizModal from './components/QuizModal.vue';
 </script>
 
 <template>
   <div class="app-wrapper">
     <AppHeader />
     <HeroSection />
+    <QuizModal />
   </div>
 </template>
 
