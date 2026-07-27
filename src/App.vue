@@ -18,7 +18,7 @@ const closeQuiz = () => {
   <div class="app-container">
     <AppHeader />
     <HeroSection @open-quiz="openQuiz" />
-    <QuizModal v-if="isQuizOpen" />
+    <QuizModal v-if="isQuizOpen" @close="closeQuiz" />
   </div>
 </template>
 
